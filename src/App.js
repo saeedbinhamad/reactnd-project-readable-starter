@@ -35,16 +35,16 @@ function mapStateToProps ({ posts, comments }) {
 
 function mapDispatchToProps (dispatch) {
   return {
-    add_post: (data) => dispatch(actions.addPost(data)),
-    edit_post: (data) => dispatch(actions.edit_post(data)),
-    delete_post: (data) => dispatch(actions.delete_post(data)),
-    upvote_post: (data) => dispatch(actions.upvote_post(data)),
-    downvote_post: (data) => dispatch(actions.downvote_post(data)),
-    add_comment: (data) => dispatch(actions.add_comment(data)),
-    edit_comment: (data) => dispatch(actions.edit_comment(data)),
-    delete_comment: (data) => dispatch(actions.delete_comment(data)),
-    upvote_comment: (data) => dispatch(actions.upvote_comment(data)),
-    downvote_comment: (data) => dispatch(actions.downvote_comment(data))
+    addPost: (data) => dispatch(actions.addPost(data)),
+    editPost: (data) => dispatch(actions.editPost(data)),
+    deletePost: (data) => dispatch(actions.deletePost(data)),
+    upvotePost: (data) => dispatch(actions.upvotePost(data)),
+    downvotePost: (data) => dispatch(actions.downvotePost(data)),
+    addComment: (data) => dispatch(actions.addComment(data)),
+    editComment: (data) => dispatch(actions.editComment(data)),
+    deleteComment: (data) => dispatch(actions.deleteComment(data)),
+    upvoteComment: (data) => dispatch(actions.upvoteComment(data)),
+    downvoteComment: (data) => dispatch(actions.downvoteComment(data))
   }
 }
 

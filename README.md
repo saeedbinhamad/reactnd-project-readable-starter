@@ -3,7 +3,8 @@ readable was built with with React and Redux. you can create and delete posts an
 
 # install
 * install node.js 8 or more
-* git clone this repo
-* cd readable/server/ && npm install && npm start
-* open seperate terminal and cd readable/ && npm install && npm start
+* git clone https://github.com/udacity/reactnd-project-readable-starter.git
+* cd reactnd-project-readable-starter/ && npm install && npm start
+* git clone this repo 
+* cd readable/ && npm install && npm start
 * open your browser and go to localhost:3000/
