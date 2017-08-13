@@ -35,7 +35,7 @@ class Post extends Component {
             posts: this.props.posts,
             comments: data
           }
-          this.props.build_comments(obj);
+          this.props.buildComments(obj);
           this.setState({
             titleInput: this.props.post.title,
             bodyInput: this.props.post.body
@@ -100,7 +100,7 @@ class Post extends Component {
           body: data.body
         }
 
-        this.props.edit_post(obj);
+        this.props.editPost(obj);
         this.toggleEditor();
         this.success();
       })
@@ -171,7 +171,7 @@ class Post extends Component {
         deleted: true
       }
 
-      this.props.delete_post(obj);
+      this.props.deletePost(obj);
       if(this.props.alertParent){
         this.props.alertParent();
       }
@@ -317,11 +317,11 @@ function mapStateToProps ({ posts, comments }) {
 
 function mapDispatchToProps (dispatch) {
   return {
-    build_comments: (data) => dispatch(actions.build_comments(data)),
-    edit_post: (data) => dispatch(actions.edit_post(data)),
-    delete_post: (data) => dispatch(actions.delete_post(data)),
-    upvote_post: (data) => dispatch(actions.upvote_post(data)),
-    downvote_post: (data) => dispatch(actions.downvote_post(data)),
+    buildComments: (data) => dispatch(actions.buildComments(data)),
+    editPost: (data) => dispatch(actions.editPost(data)),
+    deletePost: (data) => dispatch(actions.deletePost(data)),
+    upvotePost: (data) => dispatch(actions.upvotePost(data)),
+    downvotePost: (data) => dispatch(actions.downvotePost(data)),
   }
 }
 

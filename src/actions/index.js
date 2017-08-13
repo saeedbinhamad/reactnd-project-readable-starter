@@ -40,7 +40,7 @@ export function addPost ({ id, timestamp, title, body, author, category, voteSco
     deleted
   }
 }
-export function edit_post ({ id, title, body }) {
+export function editPost ({ id, title, body }) {
   return {
     type: EDIT_POST,
     id,
@@ -48,21 +48,21 @@ export function edit_post ({ id, title, body }) {
     body
   }
 }
-export function delete_post ({ id, deleted }) {
+export function deletePost ({ id, deleted }) {
   return {
     type: DELETE_POST,
     id,
     deleted
   }
 }
-export function upvote_post ({ id, voteScore }) {
+export function upvotePost ({ id, voteScore }) {
   return {
     type: UPVOTE_POST,
     id,
     voteScore
   }
 }
-export function downvote_post ({ id, voteScore }) {
+export function downvotePost ({ id, voteScore }) {
   return {
     type: DOWNVOTE_POST,
     id,
@@ -72,7 +72,7 @@ export function downvote_post ({ id, voteScore }) {
 
 
 
-export function add_comment ({ id, parentid, timestamp, body, author, voteScore, deleted, parentdeleted }) {
+export function addComment ({ id, parentid, timestamp, body, author, voteScore, deleted, parentdeleted }) {
   return {
     type: ADD_COMMENT,
     id,
@@ -85,14 +85,14 @@ export function add_comment ({ id, parentid, timestamp, body, author, voteScore,
     parentdeleted
   }
 }
-export function edit_comment ({ id, body }) {
+export function editComment ({ id, body }) {
   return {
     type: EDIT_COMMENT,
     id,
     body
   }
 }
-export function delete_comment ({ id, deleted, parentDeleted }) {
+export function deleteComment ({ id, deleted, parentDeleted }) {
   return {
     type: DELETE_COMMENT,
     id,
@@ -100,14 +100,14 @@ export function delete_comment ({ id, deleted, parentDeleted }) {
     parentDeleted
   }
 }
-export function upvote_comment ({ id, voteScore }) {
+export function upvoteComment ({ id, voteScore }) {
   return {
     type: UPVOTE_COMMENT,
     id,
     voteScore
   }
 }
-export function downvote_comment ({ id, voteScore }) {
+export function downvoteComment ({ id, voteScore }) {
   return {
     type: DOWNVOTE_COMMENT,
     id,
@@ -117,7 +117,7 @@ export function downvote_comment ({ id, voteScore }) {
 
 //
 
-export function post_page_load ({ posts, comments }) {
+export function postPageLoad ({ posts, comments }) {
   return {
     type: POST_PAGE_LOAD,
     posts,
@@ -125,7 +125,7 @@ export function post_page_load ({ posts, comments }) {
   }
 }
 
-export function build_comments ({ posts, comments }) {
+export function buildComments ({ posts, comments }) {
   return {
     type: BUILD_COMMENTS,
     posts,

@@ -5,13 +5,11 @@ import {
   DELETE_POST,
   UPVOTE_POST,
   DOWNVOTE_POST,
-  //
   ADD_COMMENT,
   EDIT_COMMENT,
   DELETE_COMMENT,
   UPVOTE_COMMENT,
   DOWNVOTE_COMMENT,
-
   POST_PAGE_LOAD,
   BUILD_COMMENTS,
   LOAD_CATEGORIES
@@ -88,7 +86,6 @@ export function comments(state = null, action) {
     case ADD_COMMENT:
       newComments = state == null ? {} : state;
       newComments[action.id] = {};
-
       newComments[action.id].id = action.id;
       newComments[action.id].author = action.author;
       newComments[action.id].title = action.title;

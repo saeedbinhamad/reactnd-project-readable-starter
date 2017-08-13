@@ -42,7 +42,7 @@ class Comment extends Component {
           body: data.body
         }
 
-        this.props.edit_comment(obj);
+        this.props.editComment(obj);
         this.toggleEditor();
         this.success();
       })
@@ -160,10 +160,10 @@ function mapStateToProps ({ posts, comments }) {
 
 function mapDispatchToProps (dispatch) {
   return {
-    edit_comment: (data) => dispatch(actions.edit_comment(data)),
-    delete_comment: (data) => dispatch(actions.delete_comment(data)),
-    upvote_comment: (data) => dispatch(actions.upvote_comment(data)),
-    downvote_comment: (data) => dispatch(actions.downvote_comment(data))
+    editComment: (data) => dispatch(actions.editComment(data)),
+    deleteComment: (data) => dispatch(actions.deleteComment(data)),
+    upvoteComment: (data) => dispatch(actions.upvoteComment(data)),
+    downvoteComment: (data) => dispatch(actions.downvoteComment(data))
   }
 }
 

@@ -63,7 +63,7 @@ class CreateComment extends Component {
           parentDeleted: data.parentDeleted
         }
 
-        this.props.add_comment(obj);
+        this.props.addComment(obj);
         window.location.href = "/posts/" + this.props.match.params.id;
       })
     })
@@ -104,7 +104,7 @@ function mapStateToProps ({ posts, comments, categories }) {
 
 function mapDispatchToProps (dispatch) {
   return {
-    add_comment: (data) => dispatch(actions.add_comment(data)),
+    addComment: (data) => dispatch(actions.addComment(data)),
   }
 }
 
