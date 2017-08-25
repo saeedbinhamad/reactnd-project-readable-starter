@@ -129,8 +129,8 @@ class EditForm extends Component {
 
               <div className="field is-grouped">
                 <div className="control">
-                  <button type="submit" className="button-primary">
-                    <span className="icon"><i className="fa fa-paper-plane"></i></span>
+                  <button type="submit" className="button">
+                    <span className="icon"><i className="fafe"></i></span>
                     &nbsp; &nbsp;
                     submit
                   </button>

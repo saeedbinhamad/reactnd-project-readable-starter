@@ -56,7 +56,7 @@ class NewPost extends Component {
 
         <div className="container has-top-margin has-bottom-margin">
           <div className="columns">
-            <div className="column is-half">
+            <div className="column">
 
               <form onSubmit={this.handleSubmit}>
                 <div className="title">
@@ -64,7 +64,7 @@ class NewPost extends Component {
                 </div>
 
                 <div className="field">
-                  <label className="label">Post Title</label>
+                  <label className="label">post title</label>
                   <div className="control">
                     <input
                       className="input"
@@ -77,7 +77,7 @@ class NewPost extends Component {
 
                 <div className="field">
                   <label className="label">username</label>
-                  <div className="control has-icons-left has-icons-right">
+                  <div className="control">
                     <input
                       className="input {/*is-success*/}"
                       type="text"
@@ -90,13 +90,13 @@ class NewPost extends Component {
                 </div>
 
                 <div className="field">
-                  <label className="label">Category</label>
+                  <label className="label">category</label>
                   <div className="control">
                     <div className="select">
                       <select
                         name="category"
                         onChange={(event) => this.handleChange(event)}>
-                        <option value="0">Select category</option>
+                        <option value="0">select category</option>
                         { categories && categories.map((category, index) =>
                           <option
                             key={index}

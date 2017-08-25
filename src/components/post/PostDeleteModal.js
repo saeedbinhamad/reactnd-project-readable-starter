@@ -19,16 +19,14 @@ class PostDeleteModal extends Component {
         <Modal
           isOpen={deletePostModal.isActive}
           onRequestClose={() => displayDeleteModal(false)}
-          contentLabel="No Overlay Click Modal"
+          contentLabel="some content"
         >
           <div className="container">
             <h1 className="title">
-              Are you sure?
+              seriously?
             </h1>
             <p>
-              Please confirm that you want to delete this post.
-              <br />
-              <i>(this action cannot be undone)</i>
+             are you sure?
             </p>
             <br />
             <div style={{marginRight:'12px'}}className="button" onClick={() => displayDeleteModal(false)}>Cancel</div>
@@ -37,7 +35,7 @@ class PostDeleteModal extends Component {
                   deletePost(deletePostModal.postId)
                   displayDeleteModal(false)
                 }} >
-              Yes i want to delete the post
+              yeah delete it!
             </div>
           </div>
         </Modal>
